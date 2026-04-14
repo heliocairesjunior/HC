@@ -14,7 +14,7 @@
             --gelo: #f4f4f4;
         }
 
-        body {
+         {
             font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -29,14 +29,15 @@
             color: white;
             padding: 60px 20px;
             text-align: center;
-            border-bottom: 5px solid var(--dourado);
+            border-bottom: 5px solid var(--VERDE);
         }
 
-        .logo-container img {
+        <img width="1797" height="1787" alt="tire_o_contorno_202604122219" src="https://github.com/user-attachments/assets/15227a6a-f432-4132-b8c9-590f3e57f1e4" />
+
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            border: 3px solid var(--dourado);
+            border: 3px solid var(--verde);
             box-shadow: 0 0 20px rgba(197, 179, 88, 0.4);
             margin-bottom: 20px;
         }
@@ -44,7 +45,7 @@
         header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: var(--dourado);
+            color: var(--verde);
             text-transform: uppercase;
         }
 
