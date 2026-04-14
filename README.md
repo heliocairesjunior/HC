@@ -1,12 +1,9 @@
-Aqui está o código refinado, com foco absoluto em energia solar. Removi qualquer distração e foquei nos benefícios específicos da tecnologia fotovoltaica, mantendo o tema Verde e Prata Ice.
 
-HTML
-<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="HC Solar - Especialista em sistemas fotovoltaicos. Reduza sua conta de luz em até 95% com tecnologia de ponta.">
+    <meta name="description" content="HC Solar - Especialista em sistemas fotovoltaicos. Reduza sua conta de luz  com tecnologia de ponta.">
     <title>HC Solar | Especialista em Energia Fotovoltaica</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,7 +38,7 @@ HTML
             box-shadow: inset 0 0 100px rgba(255,255,255,0.5);
         }
 
-        .logo-container img {
+         {
             width: 150px;
             height: 150px;
             border-radius: 50%;
@@ -214,7 +211,7 @@ HTML
         </div>
         <h1>HC Solar</h1>
         <p>Transforme a luz do sol em economia real. Instale seu sistema fotovoltaico com quem entende de tecnologia e eficiência.</p>
-        <a href="https://wa.me/5544920003969" class="cta-button">Gerar minha própria energia</a>
+        <a href="https://wa.me/5544920003969" class="cta-button">Garanta sua economia aqui</a>
     </header>
 
     <section id="solucoes-solares">
@@ -228,11 +225,11 @@ HTML
             <div class="card">
                 <i class="fas fa-chart-line"></i>
                 <h3>Redução de Custos</h3>
-                <p>Economize até 95% na sua fatura mensal. O sol trabalha para você e seu dinheiro rende mais.</p>
+                <p>Economize na sua fatura mensal. O sol trabalha para você e seu dinheiro rende mais.</p>
             </div>
             <div class="card">
                 <i class="fas fa-sun"></i>
-                <h3>Limpeza e Performance</h3>
+                <h3>Performance</h3>
                 <p>Manutenção especializada em painéis para garantir que sua geração nunca caia.</p>
             </div>
             <div class="card">
@@ -246,7 +243,7 @@ HTML
     <div class="diferencial">
         <section class="highlight-box">
             <h2>Tecnologia Fotovoltaica de Ponta</h2>
-            <p>A <strong>HC Solar</strong> utiliza exclusivamente componentes de alta performance. Nossos projetos unem o design <strong>Prata Ice</strong> com a sustentabilidade <strong>Verde</strong>, utilizando painéis de alta eficiência (OSDA) e inversores líderes de mercado (Growatt).</p>
+            <p>A <strong>HC Solar</strong> utiliza exclusivamente componentes de alta performance. Nossos projetos unem o design <strong>Prata Ice</strong> com a sustentabilidade <strong>Verde</strong>, utilizando painéis de alta eficiência  e inversores líderes de mercado .</p>
         </section>
     </div>
 
