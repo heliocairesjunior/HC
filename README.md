@@ -265,11 +265,11 @@
         <div class="benefits">
             <div class="card">
                 <i class="fas fa-chart-line"></i>
-                <div class="card-text">Economia de até 95% na conta de luz</div>
+                <div class="card-text">Economia  na conta de luz</div>
             </div>
             <div class="card">
                 <i class="fas fa-credit-card"></i>
-                <div class="card-text">Financiamento Tech e até 12x no cartão</div>
+                <div class="card-text">Financiamento e cartão de crédito </div>
             </div>
             <div class="card">
                 <i class="fas fa-city"></i>
@@ -277,7 +277,7 @@
             </div>
             <div class="card">
                 <i class="fas fa-bolt"></i>
-                <div class="card-text">Instalação Ágil e Alta Performance</div>
+                <div class="card-text">Instalação Rapida</div>
             </div>
         </div>
     </section>
@@ -304,7 +304,7 @@
                 <div class="card">
                     <span class="step-number">04</span>
                     <i class="fas fa-network-wired"></i>
-                    <div class="card-text">Monitoramento e Pós-venda Inteligente</div>
+                    <div class="card-text">Monitoramento Por aplicativo</div>
                 </div>
             </div>
         </div>
@@ -315,7 +315,7 @@
         <div class="benefits">
             <div class="card">
                 <i class="fas fa-money-bill-wave"></i>
-                <div class="card-text">✅ Redução drástica da conta</div>
+                <div class="card-text">✅ Redução drástica da conta de energia </div>
             </div>
             <div class="card">
                 <i class="fas fa-building"></i>
@@ -339,7 +339,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Todos os direitos reservados à <strong>HC Solar - Tecnologia Inteligente</strong></p>
+        <p>© 2016 Todos os direitos reservados à <strong>HC Solar - Tecnologia Inteligente</strong></p>
     </footer>
 </body>
 </html>
