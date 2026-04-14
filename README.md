@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,10 @@
     <title>HC Solar | Economia e Tecnologia</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* CORES: DOURADO (#C5B358) e CHUMBO (#36454F) */
+        /* CORES: VERDE (#C5B358) e PRATA (#36454F) */
         :root {
-            --dourado: #C5B358;
-            --chumbo: #36454F;
+            --VERDE: #C5B358;
+            --PRATA: #36454F;
             --branco: #ffffff;
             --gelo: #f4f4f4;
         }
@@ -55,7 +55,7 @@
         }
 
         .btn-cta {
-            background-color: var(--dourado);
+            background-color: var(--VERDE);
             color: var(--chumbo);
             padding: 18px 35px;
             text-decoration: none;
@@ -106,7 +106,7 @@
 
         .card i {
             font-size: 40px;
-            color: var(--dourado);
+            color: var(--VERDE);
             margin-bottom: 20px;
         }
 
@@ -125,7 +125,7 @@
         }
 
         footer p { margin: 5px 0; }
-        footer strong { color: var(--dourado); }
+        footer strong { color: var(--VERDE); }
 
         /* WHATSAPP FLUTUANTE */
         .whatsapp-float {
@@ -165,7 +165,7 @@
             <img src="https://via.placeholder.com/120/36454F/C5B358?text=HC+SOLAR" alt="HC Solar Logo">
         </div>
         <h1>HC Solar</h1>
-        <p>Economize até 95% na sua conta de luz com tecnologia fotovoltaica de ponta.</p>
+        <p>Economize  na sua conta de luz com tecnologia fotovoltaica de ponta.</p>
         <a href="https://wa.me/5544920003969" class="btn-cta">QUERO UM ORÇAMENTO GRÁTIS</a>
     </header>
 
@@ -198,7 +198,7 @@
     <section style="background-color: #eee; width: 100%; max-width: none;">
         <div style="max-width: 800px; margin: 0 auto;">
             <h2>Por que a HC Solar?</h2>
-            <p>Trabalhamos com os melhores componentes do mercado, incluindo painéis de alta eficiência e inversores <strong>Growatt</strong>. Tecnologia, durabilidade e suporte para você não se preocupar com nada.</p>
+            <p>Trabalhamos com os melhores componentes do mercado, incluindo painéis de alta eficiência  <strong>Growatt</strong>. Tecnologia, durabilidade e suporte para você não se preocupar com nada.</p>
         </div>
     </section>
 
