@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+ solar<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HC Automação Elétrica Residencial</title>
+  <title>HC Solar</title>
   <style>
     /* ------------------------------------------------------------------- */
     /* CORES: DOURADO (#C5B358) e CHUMBO (#36454F) */
@@ -144,8 +144,8 @@
       <img src="URL_DA_SUA_LOGO_AQUI.png" alt="Logo HC">
     </div>
 
-    <h1>HC Automação Elétrica Residencial</h1>
-    <p>Soluções modernas em automação, elétrica e energia solar</p>
+    <h1>HC Solar</h1>
+    <p>Soluções modernas em  energia solar</p>
     <p><strong>📞 (44) 92000-3969</strong></p>
   </header>
 
@@ -154,12 +154,12 @@
     <div class="services">
       <div class="card">
         <img src="https://img.icons8.com/ios-filled/100/C5B358/idea.png" alt="Automação">
-        <h3>Automação Residencial</h3>
+        <h3>Energia Solar</h3>
         <p>Controle sua casa com tecnologia inteligente e moderna.</p>
       </div>
       <div class="card">
         <img src="https://img.icons8.com/ios-filled/100/C5B358/electrical.png" alt="Elétrica">
-        <h3>Instalações Elétricas</h3>
+        <h3>Instalações de sistemas fotovoltaicos</h3>
         <p>Segurança e eficiência em projetos elétricos residenciais.</p>
       </div>
       <div class="card">
@@ -176,7 +176,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 HC Automação Elétrica Residencial - Todos os direitos reservados</p>
+    <p>&copy; 2025 HC Solar - Todos os direitos reservados</p>
     <p>📞 <strong>(44) 92000-3969</strong></p>
   </footer>
 
