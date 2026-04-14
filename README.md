@@ -1,4 +1,5 @@
-
+<html lang="pt-br">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="HC Solar - Especialista em sistemas fotovoltaicos. Reduza sua conta de luz  com tecnologia de ponta.">
@@ -259,6 +260,6 @@
 </body>
 </html>
 
+     
 
-
-    
+       
