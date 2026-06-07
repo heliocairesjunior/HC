@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Landing Page Tech Gold</title>
+    <title>HC Energia Solar - Sistemas e Materiais Fotovoltaicos</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
@@ -58,25 +58,31 @@
             margin: 0;
             color: var(--dourado-logo);
             text-transform: uppercase;
-            letter-spacing: 5px;
+            letter-spacing: 4px;
             text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
             position: relative;
         }
 
         header p {
             font-size: 1.3em;
-            max-width: 700px;
+            max-width: 800px;
             margin: 20px auto;
             position: relative;
             font-weight: 500;
+            font-family: 'Segoe UI', Roboto, sans-serif;
         }
 
         .contact-info {
             font-size: 1.1em;
-            color: var(--dourado-logo);
+            color: var(--chumbo-tech);
             font-weight: bold;
             letter-spacing: 1px;
             margin-top: 30px;
+        }
+        
+        .contact-info i {
+            color: var(--dourado-logo);
+            margin-right: 8px;
         }
 
         /* SEÇÕES GERAIS */
@@ -114,12 +120,12 @@
         }
 
         .card {
-            background: rgba(255, 255, 255, 0.1); /* Vidro Transparente */
+            background: rgba(255, 255, 255, 0.2); /* Vidro Transparente */
             backdrop-filter: blur(10px); /* Desfoque do Fundo */
             -webkit-backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             transition: 0.4s ease;
             position: relative;
@@ -178,9 +184,19 @@
         }
 
         .card-text {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 600;
             position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.4;
+        }
+
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--chumbo-tech);
+            margin-bottom: 10px;
             z-index: 1;
         }
 
@@ -229,6 +245,32 @@
             left: 0;
         }
 
+        /* INFO DE CONTATO ADICIONAL */
+        .info-section {
+            background: rgba(255, 255, 255, 0.3);
+            border-top: 1px solid var(--prata-dark);
+            border-bottom: 1px solid var(--prata-dark);
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        .info-item {
+            padding: 20px;
+        }
+        
+        .info-item i {
+            font-size: 2em;
+            color: var(--dourado-logo);
+            margin-bottom: 10px;
+        }
+
         /* FOOTER TECH */
         footer {
             background-color: var(--chumbo-tech);
@@ -256,62 +298,89 @@
 <body>
 
     <header>
-        <h1>Nome do Seu Produto</h1>
-        <p>A solução definitiva de alta performance para impulsionar a sua operação rumo ao próximo nível digital.</p>
+        <h1>HC Energia Solar</h1>
+        <p>Geração inteligente, economia real. Venda e distribuição de sistemas fotovoltaicos completos e materiais de alta performance.</p>
         <div class="contact-info">
-            <i class="fa-solid fa-bolt"></i> EVOLUÇÃO DISPONÍVEL AGORA
+            <i class="fa-solid fa-solar-panel"></i> TECNOLOGIA SUSTENTÁVEL DE PONTA
         </div>
     </header>
 
-    <section id="beneficios">
-        <h2>Benefícios Inovadores</h2>
+    <section id="solucoes">
+        <h2>Nossas Soluções</h2>
         <div class="benefits">
             <div class="card">
-                <i class="fa-solid fa-gauge-high"></i>
-                <div class="card-text">Alta Performance</div>
+                <i class="fa-solid fa-sun"></i>
+                <div class="card-title">Sistemas Fotovoltaicos</div>
+                <div class="card-text">Projetos completos dimensionados sob medida para residências, comércios e indústrias. Máxima redução na conta de luz.</div>
             </div>
             <div class="card">
-                <i class="fa-solid fa-shield-halved"></i>
-                <div class="card-text">Segurança de Ponta</div>
+                <i class="fa-solid fa-plug-circle-bolt"></i>
+                <div class="card-title">Materiais e Componentes</div>
+                <div class="card-text">Inversores, módulos solares, estruturas de fixação e cabeamento com certificação de padrão internacional.</div>
             </div>
             <div class="card">
-                <i class="fa-solid fa-chart-line"></i>
-                <div class="card-text">Escalabilidade Real</div>
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <div class="card-title">Rentabilidade</div>
+                <div class="card-text">O melhor custo-benefício em suprimentos fotovoltaicos para integradores e clientes finais.</div>
             </div>
         </div>
     </section>
 
     <section id="como-funciona">
-        <h2>Como Funciona?</h2>
+        <h2>Sua Jornada Solar</h2>
         <div class="steps">
             <div class="card">
                 <span class="step-number">01</span>
-                <i class="fa-solid fa-user-plus"></i>
-                <div class="card-text">Faça sua Inscrição</div>
+                <i class="fa-solid fa-file-invoice-dollar"></i>
+                <div class="card-title">Orçamento</div>
+                <div class="card-text">Analisamos seu consumo para entregar o dimensionamento exato do seu sistema ou lista de materiais.</div>
             </div>
             <div class="card">
                 <span class="step-number">02</span>
-                <i class="fa-solid fa-sliders"></i>
-                <div class="card-text">Configure seu Painel</div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <div class="card-title">Logística Eficiente</div>
+                <div class="card-text">Entrega ágil de equipamentos originais e testados prontos para a instalação e homologação.</div>
             </div>
             <div class="card">
                 <span class="step-number">03</span>
-                <i class="fa-solid fa-rocket"></i>
-                <div class="card-text">Acelere seus Resultados</div>
+                <i class="fa-solid fa-charging-station"></i>
+                <div class="card-title">Independência</div>
+                <div class="card-text">Ativação do sistema com monitoramento em tempo real direto pela palma da sua mão.</div>
             </div>
         </div>
     </section>
 
     <div class="cta">
-        <a href="#">Garanta Seu Acesso Premium</a>
+        <a href="https://wa.me/5544920003969?text=Ol%C3%A1%2C%20gostaria de fazer um or%C3%A7amento de sistema fotovoltaico com a HC Energia Solar!" target="_blank">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i>Solicitar Orçamento no WhatsApp
+        </a>
     </div>
 
+    <section class="info-section">
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Onde Estamos</h3>
+                <p>Rua Antonio Carlos Diniz, 606<br>Bairro Jardim Bethania<br>Iguaraçu - PR</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>E-mail Direto</h3>
+                <p>Helio.cairesjunior@gmail.com</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Contato Central</h3>
+                <p>(44) 92000-3969</p>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2026 <strong>Nome da Sua Empresa</strong>. Todos os direitos reservados.</p>
-        <p>Tecnologia Matrix desenvolvida sob especificações criptográficas.</p>
+        <p>&copy; 2026 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
+        <p>Sistemas e Materiais Fotovoltaicos de Alta Performance.</p>
     </footer>
 
 </body>
 </html>
 
- 
