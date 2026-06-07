@@ -1,15 +1,4 @@
-<style>
-    /* DEFINIÇÃO DO TEMA FUTURISTA: PRATA ICE E DOURADO OURO */
-    :root {
-        --prata-ice: #e2e8f0; /* Fundo Metálico Claro */
-        --prata-dark: #cbd5e1; /* Sombras Metálicas */
-        --dourado-ouro: #ffd700; /* Brilho de Energia Dourada (Gold Neon) */
-        --dourado-logo: #856404; /* Dourado Escuro/Bronze para Contraste */
-        --chumbo-tech: #1e293b; /* Texto e Detalhes */
-        --branco-glass: rgba(255, 255, 255, 0.5); /* Efeito Vidro */
-    }
-
-    body {
+body {
         margin: 0;
         font-family: 'Orbitron', 'Segoe UI', Roboto, sans-serif; /* Fonte Sci-Fi */
         background-color: var(--prata-ice);
@@ -240,5 +229,3 @@
         .cta a { font-size: 1.1em; padding: 15px 30px; }
     }
 </style>
-
- 
