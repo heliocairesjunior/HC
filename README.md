@@ -1,4 +1,8 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HC Energia Solar - Sistemas e Materiais Fotovoltaicos</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -373,11 +377,10 @@
     </section>
 
     <footer>
-        <p>&copy; 2019 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
+        <p>&copy; 2026 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
         <p>Sistemas e Materiais Fotovoltaicos de Alta Performance.</p>
     </footer>
 
 </body>
 </html>
- 
- 
+
