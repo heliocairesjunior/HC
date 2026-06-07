@@ -1,231 +1,317 @@
-body {
-        margin: 0;
-        font-family: 'Orbitron', 'Segoe UI', Roboto, sans-serif; /* Fonte Sci-Fi */
-        background-color: var(--prata-ice);
-        background-image: 
-            radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
-            radial-gradient(circle at 90% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
-        color: var(--chumbo-tech);
-        overflow-x: hidden;
-    }
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Landing Page Tech Gold</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    /* HEADER TOTALMENTE REFORMULADO - HIGH TECH */
-    header {
-        background: linear-gradient(135deg, #f8fafc 0%, var(--prata-ice) 50%, var(--prata-dark) 100%);
-        padding: 80px 20px;
-        text-align: center;
-        border-bottom: 3px solid var(--dourado-ouro);
-        box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
-        position: relative;
-    }
+    <style>
+        /* DEFINIÇÃO DO TEMA FUTURISTA: PRATA ICE E DOURADO OURO */
+        :root {
+            --prata-ice: #e2e8f0; /* Fundo Metálico Claro */
+            --prata-dark: #cbd5e1; /* Sombras Metálicas */
+            --dourado-ouro: #ffd700; /* Brilho de Energia Dourada (Gold Neon) */
+            --dourado-logo: #856404; /* Dourado Escuro/Bronze para Contraste */
+            --chumbo-tech: #1e293b; /* Texto e Detalhes */
+            --branco-glass: rgba(255, 255, 255, 0.5); /* Efeito Vidro */
+        }
 
-    /* Efeito de linhas de circuito no fundo do header */
-    header::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill-rule="evenodd"><g fill="%23856404" fill-opacity="0.05"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43 0c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-3 46c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM55 80c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 72c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/></g></g></svg>');
-        opacity: 0.5;
-    }
+        body {
+            margin: 0;
+            font-family: 'Orbitron', 'Segoe UI', Roboto, sans-serif; /* Fonte Sci-Fi */
+            background-color: var(--prata-ice);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 40%);
+            color: var(--chumbo-tech);
+            overflow-x: hidden;
+        }
 
-    header h1 {
-        font-size: 3.5em;
-        margin: 0;
-        color: var(--dourado-logo);
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-        position: relative;
-    }
+        /* HEADER TOTALMENTE REFORMULADO - HIGH TECH */
+        header {
+            background: linear-gradient(135deg, #f8fafc 0%, var(--prata-ice) 50%, var(--prata-dark) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--dourado-ouro);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
+            position: relative;
+        }
 
-    header p {
-        font-size: 1.3em;
-        max-width: 700px;
-        margin: 20px auto;
-        position: relative;
-        font-weight: 500;
-    }
+        /* Efeito de linhas de circuito no fundo do header */
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill-rule="evenodd"><g fill="%23856404" fill-opacity="0.05"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43 0c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-3 46c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM55 80c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 72c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/></g></g></svg>');
+            opacity: 0.5;
+            left: 0;
+        }
 
-    .contact-info {
-        font-size: 1.1em;
-        color: var(--dourado-logo);
-        font-weight: bold;
-        letter-spacing: 1px;
-        margin-top: 30px;
-    }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: var(--dourado-logo);
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            position: relative;
+        }
 
-    /* SEÇÕES GERAIS */
-    section {
-        padding: 80px 20px;
-        max-width: 1100px;
-        margin: auto;
-        text-align: center;
-    }
+        header p {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 20px auto;
+            position: relative;
+            font-weight: 500;
+        }
 
-    h2 {
-        color: var(--dourado-logo);
-        font-size: 2.5em;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        margin-bottom: 50px;
-        position: relative;
-        display: inline-block;
-    }
+        .contact-info {
+            font-size: 1.1em;
+            color: var(--dourado-logo);
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
 
-    /* Linha neon abaixo do título */
-    h2::after {
-        content: "";
-        position: absolute;
-        bottom: -15px; left: 0; width: 100%; height: 3px;
-        background: var(--dourado-ouro);
-        box-shadow: 0 0 15px var(--dourado-ouro);
-    }
+        /* SEÇÕES GERAIS */
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
 
-    /* GRID E CARDS FUTURISTAS - EFEITO GLASSMORPHISM */
-    .benefits, .steps {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
+        h2 {
+            color: var(--dourado-logo);
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 50px;
+            position: relative;
+            display: inline-block;
+        }
 
-    .card {
-        background: rgba(255, 255, 255, 0.1); /* Vidro Transparente */
-        backdrop-filter: blur(10px); /* Desfoque do Fundo */
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        padding: 40px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        transition: 0.4s ease;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+        /* Linha neon abaixo do título */
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -15px; left: 0; width: 100%; height: 3px;
+            background: var(--dourado-ouro);
+            box-shadow: 0 0 15px var(--dourado-ouro);
+        }
 
-    /* Borda neon no hover */
-    .card:hover {
-        transform: translateY(-10px) scale(1.02);
-        border-color: var(--dourado-ouro);
-        box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
-    }
+        /* GRID E CARDS FUTURISTAS - EFEITO GLASSMORPHISM */
+        .benefits, .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
-    /* Brilho interno no card */
-    .card::before {
-        content: "";
-        position: absolute;
-        top: -50%; left: -50%; width: 200%; height: 200%;
-        background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
-        opacity: 0;
-        transition: 0.4s;
-    }
+        .card {
+            background: rgba(255, 255, 255, 0.1); /* Vidro Transparente */
+            backdrop-filter: blur(10px); /* Desfoque do Fundo */
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .card:hover::before {
-        opacity: 1;
-    }
+        /* Borda neon no hover */
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--dourado-ouro);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
 
-    /* Ícones e Números nos Cards */
-    .card i {
-        font-size: 3em;
-        color: var(--dourado-logo);
-        margin-bottom: 20px;
-        transition: 0.3s;
-    }
+        /* Brilho interno no card */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: 0.4s;
+        }
 
-    .card:hover i {
-        color: var(--dourado-ouro);
-        transform: rotate(-10deg);
-    }
+        .card:hover::before {
+            opacity: 1;
+        }
 
-    .step-number {
-        font-size: 4em;
-        font-weight: 800;
-        color: rgba(133, 100, 4, 0.1); /* Número超淡 */
-        position: absolute;
-        top: 10px; right: 20px;
-        transition: 0.3s;
-    }
+        /* Ícones e Números nos Cards */
+        .card i {
+            font-size: 3em;
+            color: var(--dourado-logo);
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
 
-    .card:hover .step-number {
-        color: rgba(255, 215, 0, 0.2);
-    }
+        .card:hover i {
+            color: var(--dourado-ouro);
+            transform: rotate(-10deg);
+        }
 
-    .card-text {
-        font-size: 1.2em;
-        font-weight: 600;
-        position: relative;
-        z-index: 1;
-    }
+        .step-number {
+            font-size: 4em;
+            font-weight: 800;
+            color: rgba(133, 100, 4, 0.1); /* Número ultra claro */
+            position: absolute;
+            top: 10px; right: 20px;
+            transition: 0.3s;
+        }
 
-    /* BOTÃO CTA - SUPER NEON */
-    .cta {
-        text-align: center;
-        margin: 80px 0;
-        position: relative;
-    }
+        .card:hover .step-number {
+            color: rgba(255, 215, 0, 0.2);
+        }
 
-    .cta a {
-        background-color: transparent;
-        color: var(--dourado-ouro);
-        padding: 20px 40px;
-        border-radius: 50px;
-        font-size: 1.3em;
-        font-weight: bold;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        border: 2px solid var(--dourado-ouro);
-        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
-        transition: 0.3s;
-        display: inline-block;
-        position: relative;
-        overflow: hidden;
-    }
+        .card-text {
+            font-size: 1.2em;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
 
-    /* Efeito de preenchimento no hover */
-    .cta a::after {
-        content: "";
-        position: absolute;
-        top: 0; left: -100%; width: 100%; height: 100%;
-        background: var(--dourado-ouro);
-        transition: 0.4s;
-        z-index: -1;
-    }
+        /* BOTÃO CTA - SUPER NEON */
+        .cta {
+            text-align: center;
+            margin: 80px 0;
+            position: relative;
+        }
 
-    .cta a:hover {
-        color: var(--chumbo-tech);
-        box-shadow: 0 0 40px var(--dourado-ouro);
-    }
+        .cta a {
+            background-color: transparent;
+            color: var(--dourado-ouro);
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid var(--dourado-ouro);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            transition: 0.3s;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-    .cta a:hover::after {
-        left: 0;
-    }
+        /* Efeito de preenchimento no hover */
+        .cta a::after {
+            content: "";
+            position: absolute;
+            top: 0; left: -100%; width: 100%; height: 100%;
+            background: var(--dourado-ouro);
+            transition: 0.4s;
+            z-index: -1;
+        }
 
-    /* FOOTER TECH */
-    footer {
-        background-color: var(--chumbo-tech);
-        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill-rule="evenodd"><g fill="%23ffd700" fill-opacity="0.03"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43 0c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-3 46c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM55 80c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 72c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/></g></g></svg>');
-        color: var(--prata-ice);
-        text-align: center;
-        padding: 40px 20px;
-        font-size: 1em;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
+        .cta a:hover {
+            color: var(--chumbo-tech);
+            box-shadow: 0 0 40px var(--dourado-ouro);
+        }
 
-    footer p { margin: 10px 0; }
-    footer strong { color: var(--dourado-ouro); }
+        .cta a:hover::after {
+            left: 0;
+        }
 
-    /* Fontes Sci-Fi do Google Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        /* FOOTER TECH */
+        footer {
+            background-color: var(--chumbo-tech);
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><g fill-rule="evenodd"><g fill="%23ffd700" fill-opacity="0.03"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43 0c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-3 46c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM55 80c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 72c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM11 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 113c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48-61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 38c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm16 61c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 1c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm56 57c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0-47c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm0 94c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM34 75c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM89 86c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7z"/></g></g></svg>');
+            color: var(--prata-ice);
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 1em;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-    /* RESPONSIVIDADE FUTURISTA */
-    @media (max-width: 768px) {
-        header h1 { font-size: 2.2em; letter-spacing: 2px; }
-        header p { font-size: 1em; }
-        h2 { font-size: 1.8em; }
-        .card { padding: 30px 20px; }
-        .cta a { font-size: 1.1em; padding: 15px 30px; }
-    }
-</style>
+        footer p { margin: 10px 0; }
+        footer strong { color: var(--dourado-ouro); }
+
+        /* RESPONSIVIDADE FUTURISTA */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.2em; letter-spacing: 2px; }
+            header p { font-size: 1em; }
+            h2 { font-size: 1.8em; }
+            .card { padding: 30px 20px; }
+            .cta a { font-size: 1.1em; padding: 15px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nome do Seu Produto</h1>
+        <p>A solução definitiva de alta performance para impulsionar a sua operação rumo ao próximo nível digital.</p>
+        <div class="contact-info">
+            <i class="fa-solid fa-bolt"></i> EVOLUÇÃO DISPONÍVEL AGORA
+        </div>
+    </header>
+
+    <section id="beneficios">
+        <h2>Benefícios Inovadores</h2>
+        <div class="benefits">
+            <div class="card">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div class="card-text">Alta Performance</div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="card-text">Segurança de Ponta</div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <div class="card-text">Escalabilidade Real</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona">
+        <h2>Como Funciona?</h2>
+        <div class="steps">
+            <div class="card">
+                <span class="step-number">01</span>
+                <i class="fa-solid fa-user-plus"></i>
+                <div class="card-text">Faça sua Inscrição</div>
+            </div>
+            <div class="card">
+                <span class="step-number">02</span>
+                <i class="fa-solid fa-sliders"></i>
+                <div class="card-text">Configure seu Painel</div>
+            </div>
+            <div class="card">
+                <span class="step-number">03</span>
+                <i class="fa-solid fa-rocket"></i>
+                <div class="card-text">Acelere seus Resultados</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cta">
+        <a href="#">Garanta Seu Acesso Premium</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>Nome da Sua Empresa</strong>. Todos os direitos reservados.</p>
+        <p>Tecnologia Matrix desenvolvida sob especificações criptográficas.</p>
+    </footer>
+
+</body>
+</html>
+
+ 
