@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -377,7 +377,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
+        <p>&copy; 2019 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
         <p>Sistemas e Materiais Fotovoltaicos de Alta Performance.</p>
     </footer>
 
