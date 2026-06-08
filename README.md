@@ -368,6 +368,6 @@
 </section>
 
 <footer>
-    <p>&copu; 2019 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
+    <p>Desde; 2019 <strong>HC Energia Solar</strong>. Todos os direitos reservados.</p>
     <p>Sistemas e Materiais Fotovoltaicos de Alta Performance.</p>
 </footer>
